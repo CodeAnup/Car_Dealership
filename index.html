@@ -12,20 +12,28 @@
 
     <!-- navbar -->
 
-      <nav class="bg-gray-800 p-2">
-        <div class="container mx-auto flex justify-center items-center py-2">
-          <ul class="hidden sm:flex space-x-4">
-            <li><a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
-            <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
-          </ul>
-          <div class="pr-14 pl-14 text-center sm:text-left text-white lg:text-2xl md:text-[23px] mx-auto sm:mx-0">Horizon Auto Group</div>
-          <ul class="hidden sm:flex space-x-4">
-            <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
-            <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
-          </ul>
-          <div class="sm:hidden text-white">
-            <i class="fa-solid fa-bars pr-2 sm:text-xl"></i>
-          </div>
+        <nav class="bg-gray-800 p-2">
+        <div class="container mx-auto flex justify-between items-center py-2">
+            <ul class="hidden sm:flex space-x-4">
+                <li><a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
+                <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
+            </ul>
+            <div class="text-center sm:text-left text-white lg:text-2xl md:text-[23px]">Horizon Auto Group</div>
+            <ul class="hidden sm:flex space-x-4">
+                <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
+                <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
+            </ul>
+            <div class="sm:hidden text-white">
+                <i class="fa-solid fa-bars pr-2 sm:text-xl cursor-pointer" id="menu-toggle"></i>
+            </div>
+        </div>
+        <div class="hidden sm:hidden transition-max-height duration-300 ease-out" id="mobile-menu">
+            <ul class="space-y-2 p-2">
+                <li><a href="#home" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Home</a></li>
+                <li><a href="#collections" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Collections</a></li>
+                <li><a href="#about" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">About</a></li>
+                <li><a href="#contact" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Contact</a></li>
+            </ul>
         </div>
     </nav>
       
@@ -207,5 +215,13 @@
         </div>
     </div>
  </section>
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
