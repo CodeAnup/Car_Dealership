@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom transition for the dropdown */
+        .dropdown-menu {
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
     <!-- navbar -->
-
-        <nav class="bg-gray-800 p-2">
+     
+    <nav class="bg-gray-800 p-2">
         <div class="container mx-auto flex justify-between items-center py-2">
             <ul class="hidden sm:flex space-x-4">
                 <li><a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
@@ -120,56 +126,56 @@
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-trailer animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Book Trailer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Book a test drive to experience your dream car in action.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-caravan animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Canvas</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Explore our collection of canvas vans for sale, perfect for adventures.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-car-battery animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">EVs</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Discover our range of electric vehicles (EVs) for a sustainable future.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-truck animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Home-Delivery</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Enjoy the convenience of home delivery for your new vehicle purchase.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-truck-monster animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Modify</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Customize and modify your vehicle to suit your unique style and needs.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-car-burst animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Safety</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Ensuring safety is our priority; explore our commitment to vehicle security.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-car-tunnel animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Services</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Explore our comprehensive range of automotive services tailored to meet your needs.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-charging-station animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Charging Stations</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ullam!</p>
+            <p>Discover our network of convenient electric vehicle charging stations near you.</p>
             <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
         </div>
     </div>
@@ -204,18 +210,18 @@
     <div class="container mx-auto bg-gray-500">
         <div class="terms bg-white shadow-md rounded-md p-6">
             <h2 class="text-2xl font-bold mb-4">Terms and Conditions</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel massa id lorem volutpat blandit nec nec libero.</p>
-            <p class="mb-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            <p class="mb-4">Quisque semper erat at velit condimentum, sit amet posuere risus consectetur.</p>
-            <p class="mb-4">Vivamus congue est vitae elit viverra, a elementum ipsum tristique.</p>
-            <p class="mb-4">Suspendisse potenti. Nullam eu justo ut nunc euismod volutpat.</p>
+            <p class="mb-4">Users must agree to terms and conditions; content accuracy not guaranteed and subject to change without notice.</p>
+            <p class="mb-4">Horizon Auto Group is not liable for any damages arising from the use or inability to use the website.</p>
+            <p class="mb-4">All website content, including logos and images, is protected by copyright and must not be used without permission.</p>
+            <p class="mb-4">Users must not post any unlawful, harmful, or offensive material; such content will be removed.</p>
+            <p class="mb-4">By using this website, you agree to comply with all applicable laws and regulations governing its use.</p>
         </div>
         <div class="mt-8 text-center text-white pb-8">
             <p>&copy; 2024 Horizon Auto Group. All rights reserved.</p>
         </div>
     </div>
  </section>
-    <script>
+ <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
