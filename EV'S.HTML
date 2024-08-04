@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom transition for the dropdown */
+        .dropdown-menu {
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+  <!-- navbar -->
+
+  <nav class="bg-gray-800 p-2">
+    <div class="container mx-auto flex justify-between items-center py-2">
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="index.html" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
+        </ul>
+        <div class="text-center sm:text-left text-white lg:text-2xl md:text-[23px]">Horizon Auto Group</div>
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
+        </ul>
+        <div class="sm:hidden text-white">
+            <i class="fa-solid fa-bars pr-2 sm:text-xl cursor-pointer" id="menu-toggle"></i>
+        </div>
+    </div>
+    <div class="hidden sm:hidden transition-max-height duration-300 ease-out" id="mobile-menu">
+        <ul class="space-y-2 p-2">
+            <li><a href="#home" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Collections</a></li>
+            <li><a href="#about" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Trailers -->
+
+<div class="mx-w-[1260px] mx-auto">
+    <h1 class="text-center py-5 text-4xl pb-10">Popular Options:</h1>
+    <div class="max-w-[1260px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5 p-5">
+        <div class="bg-white shadow-2xl rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+           <div class="overflow-hidden">
+            <img src="https://d2q97jj8nilsnk.cloudfront.net/images/tesla-model-s-plaid-0-60-fastest-tesla.jpg" alt="Skoda" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+           </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Tesla Model-S Plaid</h3>
+                <p class="text-gray-700 mb-4">The Tesla Model S Plaid combines blistering speed, cutting-edge technology, and long-range capabilities, setting new benchmarks for electric performance sedans globally.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000 ">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcms%2Farticles%2F2023%2F7%2F3208212%2Fbmw_ix_35619a249c.jpeg&w=640&q=75" alt="XUV" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">BMW iX</h3>
+                <p class="text-gray-700 mb-4">
+                    The BMW iX showcases futuristic design, advanced electric drivetrain, and offering luxury, sustainability, and impressive range for modern electric vehicle enthusiasts.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://www.financialexpress.com/wp-content/uploads/2022/10/1-89.jpg" alt="Ford" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Mercedes-Benz EQS 580</h3>
+                <p class="text-gray-700 mb-4">The Mercedes-Benz EQS 580 epitomizes luxury and innovation in electric mobility, featuring exquisite design, and a spacious, sustainable driving experience with impressive performance and range.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://www.financialexpress.com/wp-content/uploads/2021/09/Mercedes-Benz-EQG_Concept-2021.jpg" alt="Jeep" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Mercedes-Benz EQG</h3>
+                <p class="text-gray-700 mb-4">
+                    The Mercedes-Benz EQG combines iconic off-road capability with electric power, offering rugged durability, and sustainable performance for adventurous electric vehicle enthusiasts.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-[1260px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5 p-5">
+        <div class="bg-white shadow-2xl rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+           <div class="overflow-hidden">
+            <img src="https://static.autox.com/uploads/2023/09/Tata-Nexon-EV-Right-Front-Three-Quarter.jpg" alt="Skoda" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+           </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Tata Nexon EV</h3>
+                <p class="text-gray-700 mb-4">The Tata Nexon EV blends affordability with eco-friendliness, featuring a practical SUV design, commendable range, and modern amenities, ideal for urban commuting with zero emissions.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000 ">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://assets.newatlas.com/dims4/default/429d290/2147483647/strip/true/crop/4000x2252+0+0/resize/2880x1621!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F94%2Fc8%2F1e1f6d9b405eaea52807625a42a9%2F2024-hyundai-kona-3.jpg" alt="XUV" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Hyundai Kona</h3>
+                <p class="text-gray-700 mb-4">
+                    The Hyundai Kona Electric offers stylish design, impressive range, and advanced technology, making it a versatile and eco-friendly choice in the compact SUV segment.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://etimg.etb2bimg.com/photo/100125796.cms" alt="Ford" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">BYD seal champion edition</h3>
+                <p class="text-gray-700 mb-4">The BYD Seal Champion Edition combines sleek design, efficient electric powertrain, and advanced features for a sustainable and modern driving experience.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2024-04/240415-tesla-cybertruck-vl-1126a-5ac020.jpg" alt="Jeep" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Tesla Cyber Truck</h3>
+                <p class="text-gray-700 mb-4">
+                    The Tesla Cybertruck revolutionizes the pickup segment with its bold design, robust electric performance, and cutting-edge tech, redefining expectations for electric trucks globally.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- end -->
+
+    <hr><div class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold mb-4 pl-3 text-center sm:text-left">Leave a Reply</h2>
+        <p class="mb-4 pl-3 text-center sm:text-left pb-2">Your email address will not be published. Required fields are marked *</p>
+        
+        <form class="flex flex-wrap mb-4">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name *</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address *</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500">
+            </div>
+        </form>
+        
+        <div class="mb-4 pr-3 pl-3">
+            <label for="comment" class="block text-gray-700 text-sm font-bold mb-2">Comment</label>
+            <textarea id="comment" name="comment" rows="4" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+        
+        <button type="submit" class="bg-gray-500 hover:bg-blue-700 text-white px-4 py-2 ml-4 rounded-md hover:scale-110 duration-500">Submit</button>
+    </div>
+
+    <!-- end -->
+
+    <hr><section>
+        <div class="container mx-auto bg-gray-500">
+            <div class="terms bg-white shadow-md rounded-md p-6">
+                <h2 class="text-2xl font-bold mb-4">Terms and Conditions</h2>
+                <p class="mb-4">Users must agree to terms and conditions; content accuracy not guaranteed and subject to change without notice.</p>
+                <p class="mb-4">Horizon Auto Group is not liable for any damages arising from the use or inability to use the website.</p>
+                <p class="mb-4">All website content, including logos and images, is protected by copyright and must not be used without permission.</p>
+                <p class="mb-4">Users must not post any unlawful, harmful, or offensive material; such content will be removed.</p>
+                <p class="mb-4">By using this website, you agree to comply with all applicable laws and regulations governing its use.</p>
+            </div>
+            <div class="mt-8 text-center text-white pb-8">
+                <p>&copy; 2024 Horizon Auto Group. All rights reserved.</p>
+            </div>
+        </div>
+     </section>
+<script src="EVs.js"></script>
+</body>
+</html>

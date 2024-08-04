@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom transition for the dropdown */
+        .dropdown-menu {
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+ <nav class="bg-gray-800 p-2">
+    <div class="container mx-auto flex justify-between items-center py-2">
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="index.html" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
+        </ul>
+        <div class="text-center sm:text-left text-white lg:text-2xl md:text-[23px]">Horizon Auto Group</div>
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
+        </ul>
+        <div class="sm:hidden text-white">
+            <i class="fa-solid fa-bars pr-2 sm:text-xl cursor-pointer" id="menu-toggle"></i>
+        </div>
+    </div>
+    <div class="hidden sm:hidden transition-max-height duration-300 ease-out" id="mobile-menu">
+        <ul class="space-y-2 p-2">
+            <li><a href="index.html" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Collections</a></li>
+            <li><a href="#about" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="mx-w-[1260px] mx-auto">
+    <h1 class="text-center py-5 pb-8 text-4xl">Services Avaliable:</h1><hr>
+</div>
+
+<section class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between mx-w-[1260px] mx-auto p-4 bg-gray-400 odd">
+    <img src="https://repairsmith-prod-wordpress.s3.amazonaws.com/2022/11/mechanic-working-on-engine.jpg" alt="ADAS" class="w-full lg:w-[50%] h-auto object-cover mb-4 lg:mb-0 lg:mr-4">
+    <div class="w-full lg:w-[50%]">
+        <h1 class="text-4xl lg:text-left mb-4 pb-2">1.] Vehicle Maintenance and Repairs:</h1>
+        <p class="text-lg">Offering comprehensive vehicle maintenance and repairs, our services include oil changes, brake inspections, and tire rotations to keep your vehicle running smoothly and safely on the road.</p>
+    </div>
+</section>
+
+<section class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between mx-w-[1260px] mx-auto p-4 even">
+    <div class="w-full lg:w-[50%]">
+        <h1 class="text-4xl lg:text-left mb-4 pb-2">2.] Diagnostic Services:</h1>
+        <p class="text-lg pb-5">Our diagnostic services utilize advanced technology to pinpoint and resolve vehicle issues swiftly, ensuring optimal performance and reliability for your peace of mind on every drive.</p>
+    </div>
+    <img src="https://d1rz4ui464s6g7.cloudfront.net/wp-content/uploads/2018/12/08171907/shutterstock_1711212049.jpg" alt="ADAS" class="w-full lg:w-[50%] h-auto object-cover mb-4 lg:mb-0">
+</section>
+
+<section class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between mx-w-[1260px] mx-auto p-4 bg-gray-400 odd">
+    <img src="https://www.krishnaautoelectric.com/blog/wp-content/uploads/2021/03/How-to-Choose-the-Right-Automobile-Spare-Parts-for-Your-Vehicle.jpg" alt="Air Bags" class="w-full lg:w-[50%] h-auto object-cover mb-4 lg:mb-0 lg:mr-4 ">
+    <div class="w-full lg:w-[50%]">
+        <h1 class="text-4xl lg:text-left mb-4 pb-2">3.] Parts and Accessories</h1>Explore our wide selection of genuine OEM parts and accessories tailored to enhance your vehicle's performance, style, and functionality, ensuring a perfect fit and lasting quality for every journey.</p>
+    </div>
+</section>
+
+<section class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between mx-w-[1260px] mx-auto p-4 even">
+    <div class="w-full lg:w-[50%]">
+        <h1 class="text-4xl lg:text-left mb-4 pb-2">4.] Detailing Services</h1>
+        <p class="text-lg pb-5">Discover our meticulous interior and exterior detailing services, expertly designed to rejuvenate your vehicle's appearance and maintain its value, ensuring a pristine and enjoyable driving experience.</p>
+    </div>
+    <img src="https://car-o-man.com/wp-content/uploads/2021/10/car-detailingg.jpg" alt="ADAS" class="w-full lg:w-[50%] h-auto object-cover mb-4 lg:mb-0 ">
+</section>
+
+<section class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between mx-w-[1260px] mx-auto p-4 bg-gray-400 odd">
+    <img src="https://simplythebestauto.com/wp-content/themes/gbm/images/tire-services.jpg" alt="Air Bags" class="w-full lg:w-[50%] h-auto object-cover mb-4 lg:mb-0 lg:mr-4">
+    <div class="w-full lg:w-[50%]">
+        <h1 class="text-4xl lg:text-left mb-4 pb-2">5.] Tyre Services</h1>
+        <p class="text-lg">Our comprehensive tire services include sales, rotations, balancing, and alignments, ensuring your vehicle maintains optimal performance and safety on the road with expert care and precision.</p>
+    </div>
+</section>
+
+<hr><div class="container mx-auto py-8">
+    <h2 class="text-2xl font-bold mb-4 pl-3 text-center sm:text-left">Leave a Reply</h2>
+    <p class="mb-4 pl-3 text-center sm:text-left pb-2">Your email address will not be published. Required fields are marked *</p>
+    
+    <form class="flex flex-wrap mb-4">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name *</label>
+            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500">
+        </div>
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address *</label>
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500">
+        </div>
+    </form>
+    
+    <div class="mb-4 pr-3 pl-3">
+        <label for="comment" class="block text-gray-700 text-sm font-bold mb-2">Comment</label>
+        <textarea id="comment" name="comment" rows="4" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500"></textarea>
+    </div>
+    
+    <button type="submit" class="bg-gray-500 hover:bg-blue-700 text-white px-4 py-2 ml-4 rounded-md hover:scale-110 duration-500">Submit</button>
+</div>
+
+<!-- end -->
+ <hr><section>
+    <div class="container mx-auto bg-gray-500">
+        <div class="terms bg-white shadow-md rounded-md p-6">
+            <h2 class="text-2xl font-bold mb-4">Terms and Conditions</h2>
+            <p class="mb-4">Users must agree to terms and conditions; content accuracy not guaranteed and subject to change without notice.</p>
+            <p class="mb-4">Horizon Auto Group is not liable for any damages arising from the use or inability to use the website.</p>
+            <p class="mb-4">All website content, including logos and images, is protected by copyright and must not be used without permission.</p>
+            <p class="mb-4">Users must not post any unlawful, harmful, or offensive material; such content will be removed.</p>
+            <p class="mb-4">By using this website, you agree to comply with all applicable laws and regulations governing its use.</p>
+        </div>
+        <div class="mt-8 text-center text-white pb-8">
+            <p>&copy; 2024 Horizon Auto Group. All rights reserved.</p>
+        </div>
+    </div>
+ </section>
+   <script src="service.js"></script>
+</body>
+</html>

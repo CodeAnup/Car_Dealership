@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Auto Group</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom transition for the dropdown */
+        .dropdown-menu {
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+   <!-- navbar -->
+
+   <nav class="bg-gray-800 p-2">
+    <div class="container mx-auto flex justify-between items-center py-2">
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="index.html" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
+        </ul>
+        <div class="text-center sm:text-left text-white lg:text-2xl md:text-[23px]">Horizon Auto Group</div>
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
+        </ul>
+        <div class="sm:hidden text-white">
+            <i class="fa-solid fa-bars pr-2 sm:text-xl cursor-pointer" id="menu-toggle"></i>
+        </div>
+    </div>
+    <div class="hidden sm:hidden transition-max-height duration-300 ease-out" id="mobile-menu">
+        <ul class="space-y-2 p-2">
+            <li><a href="#home" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Collections</a></li>
+            <li><a href="#about" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Trailers -->
+
+<div class="mx-w-[1260px] mx-auto">
+    <h1 class="text-center py-5 text-4xl pb-10">Avaliable Options:</h1>
+    <div class="max-w-[1260px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5 p-5">
+        <div class="bg-white shadow-2xl rounded-lg overflow-hidden hover:bg-gray-200 duration-700 opacity-0 transform translate-x-[-100px] transition-all">
+           <div class="overflow-hidden">
+            <img src="https://pnorental.com/wp-content/uploads/2018/03/PNO_News_02-1.jpg" alt="Skoda" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+           </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Tesla Semi Truck</h3>
+                <p class="text-gray-700 mb-4">The Tesla Semi Truck is a zero-emission electric hauler with impressive range, performance, and autonomous driving features, revolutionizing long-haul transportation.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000 ">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://www.motorbiscuit.com/wp-content/uploads/2024/02/Volvo-VNL-860-Semi-Truck.jpg?w=902&h=507&crop=1" alt="XUV" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Volvo Semi Truck</h3>
+                <p class="text-gray-700 mb-4">
+                    Volvo semi trucks are celebrated for their durability, fuel efficiency, advanced safety features, and commitment , making them ideal for  transportation challenges worldwide.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://www.topgear.com/sites/default/files/2023/04/1-Scania-BEV-HGV.jpg?w=1784&h=1004" alt="Ford" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">Scania Semi Truck</h3>
+                <p class="text-gray-700 mb-4">Scania's semi trucks are renowned for their robustness, efficiency, and innovative solutions, ensuring superior performance and sustainability in logistics worldwide.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+            <div class="overflow-hidden">
+                <img src="https://www.automotivetestingtechnologyinternational.com/wp-content/uploads/2023/04/p-eot-man-etruck-wintertesting-3-e1681303392743.jpg" alt="Jeep" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
+            </div>
+            <div class="p-5">
+                <h3 class="text-xl font-bold mb-2">MAN Semi Truck</h3>
+                <p class="text-gray-700 mb-4">
+                    MAN's semi trucks excel with their powerful engines, reliability, and advanced driver assistance systems, offering optimal efficiency and performance for logistics needs.</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 hover:scale-110 duration-1000">Book now</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- end -->
+
+    <hr><div class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold mb-4 pl-3 text-center sm:text-left">Leave a Reply</h2>
+        <p class="mb-4 pl-3 text-center sm:text-left pb-2">Your email address will not be published. Required fields are marked *</p>
+        
+        <form class="flex flex-wrap mb-4">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name *</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address *</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500">
+            </div>
+        </form>
+        
+        <div class="mb-4 pr-3 pl-3">
+            <label for="comment" class="block text-gray-700 text-sm font-bold mb-2">Comment</label>
+            <textarea id="comment" name="comment" rows="4" class="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+        
+        <button type="submit" class="bg-gray-500 hover:bg-blue-700 text-white px-4 py-2 ml-4 rounded-md hover:scale-110 duration-500">Submit</button>
+    </div>
+
+    <!-- end -->
+
+    <hr><section>
+        <div class="container mx-auto bg-gray-500">
+            <div class="terms bg-white shadow-md rounded-md p-6">
+                <h2 class="text-2xl font-bold mb-4">Terms and Conditions</h2>
+                <p class="mb-4">Users must agree to terms and conditions; content accuracy not guaranteed and subject to change without notice.</p>
+                <p class="mb-4">Horizon Auto Group is not liable for any damages arising from the use or inability to use the website.</p>
+                <p class="mb-4">All website content, including logos and images, is protected by copyright and must not be used without permission.</p>
+                <p class="mb-4">Users must not post any unlawful, harmful, or offensive material; such content will be removed.</p>
+                <p class="mb-4">By using this website, you agree to comply with all applicable laws and regulations governing its use.</p>
+            </div>
+            <div class="mt-8 text-center text-white pb-8">
+                <p>&copy; 2024 Horizon Auto Group. All rights reserved.</p>
+            </div>
+        </div>
+     </section>
+<script src="Trailer.js"></script>
+</body>
+</html>

@@ -14,50 +14,49 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-200">
 
-    <!-- navbar -->
-     
-    <nav class="bg-gray-800 p-2">
-        <div class="container mx-auto flex justify-between items-center py-2">
-            <ul class="hidden sm:flex space-x-4">
-                <li><a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
-                <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
-            </ul>
-            <div class="text-center sm:text-left text-white lg:text-2xl md:text-[23px]">Horizon Auto Group</div>
-            <ul class="hidden sm:flex space-x-4">
-                <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
-                <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
-            </ul>
-            <div class="sm:hidden text-white">
-                <i class="fa-solid fa-bars pr-2 sm:text-xl cursor-pointer" id="menu-toggle"></i>
-            </div>
+ <!-- Navbar -->
+ <nav class="bg-gray-800 p-2">
+    <div class="container mx-auto flex justify-between items-center py-2">
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Collections</a></li>
+        </ul>
+        <div class="text-center sm:text-left text-white lg:text-2xl md:text-[23px]">Horizon Auto Group</div>
+        <ul class="hidden sm:flex space-x-4">
+            <li><a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a></li>
+        </ul>
+        <div class="sm:hidden text-white">
+            <i class="fa-solid fa-bars pr-2 sm:text-xl cursor-pointer" id="menu-toggle"></i>
         </div>
-        <div class="hidden sm:hidden transition-max-height duration-300 ease-out" id="mobile-menu">
-            <ul class="space-y-2 p-2">
-                <li><a href="#home" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Home</a></li>
-                <li><a href="#collections" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Collections</a></li>
-                <li><a href="#about" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">About</a></li>
-                <li><a href="#contact" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-      
-    <!-- image -->
+    </div>
+    <div class="hidden sm:hidden transition-max-height duration-300 ease-out" id="mobile-menu">
+        <ul class="space-y-2 p-2">
+            <li><a href="#home" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Home</a></li>
+            <li><a href="#collections" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Collections</a></li>
+            <li><a href="#about" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">About</a></li>
+            <li><a href="#contact" class="text-white hover:bg-gray-700 block px-3 py-2 rounded">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+  
+<!-- Image Section with Blur -->
+<section class="relative opacity-0 transform translate-y-10 transition-opacity duration-1000 ease-out">
+    <img src="https://img3.wallspic.com/previews/6/1/8/3/6/163816/163816-ford-ford_bronco-2021_ford_bronco-2021_ford_bronco_sport-ford_bronco_ii-x750.jpg" alt="Car Image" class="w-full h-[550px] sm:h-[600px] object-cover blur-sm">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 class="relative text-5xl sm:text-6xl p-3 text-center sm:text-center">The way it should be</h1>
+        <button class="relative mt-4 px-2 sm:px-5 py-2 sm:py-3 border border-white hover:bg-white hover:text-black text-white font-bold rounded-md hover:scale-110 duration-500">Find your car</button>
+    </div>
+</section>
 
-    <section class="relative">
-        <img src="https://img3.wallspic.com/previews/6/1/8/3/6/163816/163816-ford-ford_bronco-2021_ford_bronco-2021_ford_bronco_sport-ford_bronco_ii-x750.jpg" alt="Car Image" class="w-full h-[400px] sm:h-[700px]">
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <h1 class="relative text-5xl sm:text-6xl p-3 text-center sm:text-center">The way it should be</h1>
-            <button class="relative mt-4 px-2 sm:px-5 py-2 sm:py-3 border border-white hover:bg-white hover:text-black text-white font-bold rounded-md hover:scale-110 duration-500">Find your car</button>
-        </div>
-    </section>
-      
+
     <!-- intro -->
    <div class="mx-w-[1260px] mx-auto">
-     <h1 class="text-center py-5 text-4xl pb-10">About us</h1>
-     <p class="pb-16 pl-2  text-center sm:text-left">Welcome to Horizon Auto Group, your premier destination for finding the perfect vehicle. Whether you're searching for luxury, reliability, or versatility, we're here to make your car-buying experience seamless and satisfying. At [Your Dealership Name], we pride ourselves on offering a curated selection of top-quality vehicles that cater to every need and preference. With a commitment to exceptional service and transparency, our team is dedicated to helping you find the right vehicle at the right price. Explore our diverse inventory and discover why [Your Dealership Name] is the trusted choice for automotive excellence. Your dream car awaits!
+     <h1 class="text-center py-5 text-4xl pb-6">About us</h1>
+     <p class="pb-6 pl-2 text-center sm:text-left ">Welcome to Horizon Auto Group, your premier destination for finding the perfect vehicle. Whether you're searching for luxury, reliability, or versatility, we're here to make your car-buying experience seamless and satisfying. At Horizon Auto Group, we pride ourselves on offering a curated selection of top-quality vehicles that cater to every need and preference. With a commitment to exceptional service and transparency, our team is dedicated to helping you find the right vehicle at the right price. Explore our diverse inventory and discover why Horizon Auto Group is the trusted choice for automotive excellence. Your dream car awaits!
 
      </p><hr>
    </div>
@@ -69,7 +68,7 @@
   <!-- Cards -->
 
     <div class="max-w-[1260px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5 p-5">
-        <div class="bg-white shadow-2xl rounded-lg overflow-hidden hover:bg-gray-200 duration-700">
+        <div class="bg-white shadow-2xl rounded-lg overflow-hidden hover:bg-gray-200 duration-700 opacity-0 transform translate-x-[-100px] transition-all">
            <div class="overflow-hidden">
             <img src="https://carwow-uk.imgix.net/prismic/2652b67e-b030-4688-83ed-1eb307b7d2fe_KODIAQ_SE_L_035.jpeg?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=750" alt="Skoda" class="w-full h-48 object-cover hover:scale-110 duration-1000 ">
            </div>
@@ -127,56 +126,64 @@
             <i class="fa-solid fa-trailer animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Book Trailer</h3>
             <p>Book a test drive to experience your dream car in action.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="Trailer.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-caravan animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Canvas</h3>
             <p>Explore our collection of canvas vans for sale, perfect for adventures.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="Canvas.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-car-battery animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">EVs</h3>
             <p>Discover our range of electric vehicles (EVs) for a sustainable future.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="EV'S.HTML">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-truck animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Home-Delivery</h3>
             <p>Enjoy the convenience of home delivery for your new vehicle purchase.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="Home Dilevry.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-truck-monster animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Modify</h3>
             <p>Customize and modify your vehicle to suit your unique style and needs.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="Modify.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-car-burst animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Safety</h3>
             <p>Ensuring safety is our priority; explore our commitment to vehicle security.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="Safety.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-car-tunnel animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Services</h3>
             <p>Explore our comprehensive range of automotive services tailored to meet your needs.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="service.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
 
         <div class="shadow-xl p-4 text-center hover:bg-gray-300 duration-700">
             <i class="fa-solid fa-charging-station animate-bounce pt-4" style="font-size: 35px"></i>
             <h3 class="text-xl pt-2 py-2">Charging Stations</h3>
             <p>Discover our network of convenient electric vehicle charging stations near you.</p>
-            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button>
+            <a href="Charging_Stations.html">
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-orange-600 hover:scale-110 duration-500 mt-5">Explore</button></a>
         </div>
     </div>
  </section><br>
@@ -221,13 +228,6 @@
         </div>
     </div>
  </section>
- <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
+<script src="script1.js"></script>
 </body>
 </html>
